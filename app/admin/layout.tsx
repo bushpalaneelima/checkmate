@@ -35,12 +35,14 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   }
 
   const navItems = [
-    { label: 'Overview',  href: '/admin',          icon: '◈' },
+    { label: 'Overview',  href: '/admin',           icon: '◈' },
     { label: 'Groups',    href: '/admin/groups',    icon: '⬡' },
     { label: 'Customers', href: '/admin/customers', icon: '◉' },
     { label: 'Players',   href: '/admin/players',   icon: '◎' },
     { label: 'Rules',     href: '/admin/rules',     icon: '❖' },
     { label: 'Dashboard', href: '/dashboard',       icon: '⌂' },
+    { label: 'Leads',     href: '/admin/leads',     icon: '◎' },
+
   ]
 
   if (loading) return (
