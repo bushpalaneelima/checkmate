@@ -231,7 +231,7 @@ export default function HomePage() {
       <section id="register" className="relative px-6 py-20 max-w-xl mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-black mb-3">Register Your Interest</h2>
-          <p className="text-zinc-500">Join the next auction. We'll be in touch with details.</p>
+          <p className="text-zinc-500">We'll reach out with session details soon. Get ready to strategise!</p>
         </div>
 
         {success ? (
@@ -290,7 +290,7 @@ export default function HomePage() {
             </button>
 
             <p className="text-zinc-600 text-xs text-center">
-              No spam. We'll only contact you about auction opportunities.
+              We'll only contact you about Game of Gambits sessions and participation.
             </p>
           </form>
         )}
