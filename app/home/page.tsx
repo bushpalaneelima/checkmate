@@ -37,7 +37,7 @@ export default function HomePage() {
   const faqs = [
     {
       q: 'What is Game of Gambits?',
-      a: 'Game of Gambits is a live fantasy cricket auction platform where you bid on IPL players using a fixed purse of points. Build the best squad, outsmart your opponents, and win the league!'
+      a: 'Game of Gambits is a live Cricket Strategy Simulation platform where you bid on IPL players using a fixed purse of points. Build the best squad, outsmart your opponents, and win the league!'
     },
     {
       q: 'How does the auction work?',
