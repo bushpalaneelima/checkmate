@@ -22,7 +22,7 @@ export default function HomePage() {
       phone: form.phone,
       source: 'landing_page',
       status: 'new',
-      interested_in: 'Checkmate IPL Fantasy Auction',
+      interested_in: 'Game of Gambits IPL Fantasy Auction',
     })
 
     if (error) {
@@ -36,8 +36,8 @@ export default function HomePage() {
 
   const faqs = [
     {
-      q: 'What is Checkmate?',
-      a: 'Checkmate is a live fantasy cricket auction platform where you bid on IPL players using a fixed purse of points. Build the best squad, outsmart your opponents, and win the league!'
+      q: 'What is Game of Gambits?',
+      a: 'Game of Gambits is a live fantasy cricket auction platform where you bid on IPL players using a fixed purse of points. Build the best squad, outsmart your opponents, and win the league!'
     },
     {
       q: 'How does the auction work?',
@@ -71,7 +71,7 @@ export default function HomePage() {
       <nav className="relative border-b border-zinc-800/50 bg-zinc-950/80 backdrop-blur px-6 py-4 flex items-center justify-between sticky top-0 z-50">
         <div className="flex items-center gap-2">
           <div className="w-6 h-6 bg-amber-400 rotate-45 rounded-sm" />
-          <span className="font-bold tracking-widest uppercase text-sm">Checkmate</span>
+          <span className="font-bold tracking-widest uppercase text-sm">Game of Gambits</span>
         </div>
         <div className="flex items-center gap-4">
           <a href="#how-it-works" className="text-zinc-500 hover:text-white text-sm transition-colors hidden md:block">How it works</a>
@@ -100,7 +100,7 @@ export default function HomePage() {
 
         <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
           Bid smart. Build the perfect squad. Outsmart every manager in the room.
-          Checkmate is where cricket passion meets strategic thinking.
+          Game of Gambits is where cricket passion meets strategic thinking.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -173,7 +173,7 @@ export default function HomePage() {
       <section className="relative px-6 py-20 bg-zinc-950/50">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-black mb-3">Why Checkmate?</h2>
+            <h2 className="text-3xl md:text-4xl font-black mb-3">Why Game of Gambits?</h2>
             <p className="text-zinc-500">Built for serious fantasy cricket managers</p>
           </div>
 
@@ -301,7 +301,7 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <div className="w-5 h-5 bg-amber-400 rotate-45 rounded-sm" />
-            <span className="font-bold tracking-widest uppercase text-sm">Checkmate</span>
+            <span className="font-bold tracking-widest uppercase text-sm">Game of Gambits</span>
           </div>
           <p className="text-zinc-600 text-sm">
             Powered by{' '}
