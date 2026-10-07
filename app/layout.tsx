@@ -14,27 +14,30 @@ const geistMono = Geist_Mono({
 
 
 export const metadata: Metadata = {
-  title: "Checkmate — Fantasy Cricket Auction",
-  description: "The ultimate fantasy cricket auction platform. Bid on IPL players, build your squad, and win the league. Powered by NB Blue Studios.",
+  title: "Game of Gambits — Strategic Decision Simulation",
+  description:
+    "Game of Gambits is a strategic decision simulation by NB Blue Studios. Build your squad, manage resources, make smart bids, and compete through strategy and decision-making.",
   openGraph: {
-    title: "Checkmate — Fantasy Cricket Auction",
-    description: "Bid smart. Build the perfect squad. Outsmart every manager in the room.",
-    url: "https://checkmate.nbbluestudios.com",
-    siteName: "Checkmate",
+    title: "Game of Gambits — Strategic Decision Simulation",
+    description:
+      "Build your squad. Manage resources. Outsmart the competition.",
+    url: "https://www.gameofgambits.com",
+    siteName: "Game of Gambits",
     images: [
       {
-        url: "https://checkmate.nbbluestudios.com/og-image.png",
+        url: "https://www.gameofgambits.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Checkmate Fantasy Cricket Auction",
+        alt: "Game of Gambits",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Checkmate — Fantasy Cricket Auction",
-    description: "Bid smart. Build the perfect squad. Outsmart every manager in the room.",
+    title: "Game of Gambits — Strategic Decision Simulation",
+    description:
+      "Build your squad. Manage resources. Outsmart the competition.",
   },
   icons: {
     icon: "/favicon.ico",
