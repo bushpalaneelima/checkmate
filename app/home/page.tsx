@@ -37,7 +37,7 @@ export default function HomePage() {
   const faqs = [
     {
       q: 'What is Game of Gambits?',
-      a: 'Game of Gambits is a live Cricket Strategy Simulation platform where you bid on IPL players using a fixed purse of points. Build the best squad, outsmart your opponents, and win the league!'
+      a: 'Game of Gambits is a live strategic decision simulation built around cricket. Participants manage limited resources, bid for players, build a squad and compete through analysis, judgement and strategy.'
     },
     {
       q: 'How does the auction work?',
@@ -142,7 +142,7 @@ export default function HomePage() {
             {
               step: '01',
               title: 'Join the Auction',
-              description: 'Get your 1000-point purse and compete in a live auction room with other managers. Bid on IPL players across Platinum, Gold, Silver and Bronze tiers.',
+              description: 'Get your points purse and compete in a live auction room with other managers. Bid strategically across different player tiers while managing limited resources.',
               icon: '🏏',
             },
             {
@@ -154,7 +154,7 @@ export default function HomePage() {
             {
               step: '03',
               title: 'Win the League',
-              description: 'Score points as your players perform in real IPL matches. Top the leaderboard at the end of the season to claim the championship.',
+              description: 'Track your squad performance and compete on the leaderboard. The decisions you make during the game determine how effectively you use your resources.',
               icon: '🏆',
             },
           ].map((item) => (
@@ -181,9 +181,9 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-4">
             {[
               { icon: '⚡', title: 'Real-time Live Auction', desc: 'Bid simultaneously with all managers in a live auction room. 30-second timer per player keeps the energy high.' },
-              { icon: '🧠', title: 'Pure Strategy', desc: 'Manage your purse across 249 players. Reserve enough for mandatory squad slots. Outsmart your opponents with smart bidding.' },
+              { icon: '🧠', title: 'Pure Strategy', desc: 'Manage your purse across a structured player pool. Reserve enough for mandatory squad slots. Outsmart your opponents with smart decisions.' },
               { icon: '🎯', title: 'Power Players', desc: 'Nominate key players for 2x points multiplier. One smart Power Player pick can change your entire season.' },
-              { icon: '📊', title: 'Live Leaderboard', desc: 'Track your ranking after every IPL match. Points update in real-time based on actual player performances.' },
+              { icon: '📊', title: 'Live Leaderboard', desc: 'Track rankings and performance as the competition progresses. See how your strategic choices compare with other managers.' },
               { icon: '🔄', title: 'Dynamic Rules', desc: 'Each auction group can customise rules — player classes, purse size, squad limits. Fully flexible for any group size.' },
               { icon: '🏏', title: 'Structured Player Pool', desc: 'Players are organised across configurable tiers and base values, creating different strategic choices in every game.' },
             ].map((feature) => (
@@ -239,7 +239,7 @@ export default function HomePage() {
           <div className="bg-green-500/10 border border-green-500/30 rounded-2xl p-8 text-center">
             <p className="text-4xl mb-4">🎉</p>
             <p className="text-green-400 font-bold text-xl mb-2">You're on the list!</p>
-            <p className="text-zinc-500 text-sm">We'll reach out with auction details soon. Get ready to bid!</p>
+            <p className="text-zinc-500 text-sm">We'll reach out with session details soon. Get ready to strategise!</p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 space-y-4">
