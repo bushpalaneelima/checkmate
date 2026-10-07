@@ -95,14 +95,14 @@ export default function HomePage() {
 <h1 className="text-5xl md:text-7xl font-black mb-6 leading-none tracking-tight">
   Think.
   <br />
-  <span className="text-amber-400">Fantasy Cricket</span>
+  <span className="text-amber-400">Decide.</span>
   <br />
    Compete.
 </h1>
 
 <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-  Bid smart. Build the perfect squad. Outsmart every manager in the room.
-  Game of Gambits is where cricket passion meets strategic thinking.
+  Manage limited resources, make strategic choices and build your winning squad.
+  Game of Gambits turns cricket into a live decision-making experience.
 </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="#register"
