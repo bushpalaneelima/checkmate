@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 export default function LoginPage() {
   const router = useRouter()
@@ -28,7 +29,6 @@ export default function LoginPage() {
     }
 
     if (data.user) {
-      // Check if admin or manager
       const { data: manager } = await supabase
         .from('managers')
         .select('role')
@@ -44,7 +44,7 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] flex items-center justify-center px-4">
+    <div className="min-h-screen bg-[#0a0a0a] flex items-center justify-center px-4 relative overflow-hidden">
       {/* Background grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
 
@@ -52,28 +52,45 @@ export default function LoginPage() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-500/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative w-full max-w-md">
-        {/* Logo */}
+        {/* Brand */}
         <div className="text-center mb-10">
-          <div className="inline-flex items-center justify-center mb-4">
-  <img
-    src="/game-of-gambits-logo.svg"
-    alt="Game of Gambits"
-    className="h-14 w-auto"
-  />
-</div>
-          <p className="text-zinc-500 text-sm tracking-wider uppercase">Strategic Decision Simulation</p>
+          <Link
+            href="/"
+            className="inline-flex flex-col items-center justify-center group"
+          >
+            <img
+              src="/game-of-gambits-icon.svg"
+              alt="Game of Gambits"
+              className="h-16 w-16 mb-4 transition-transform group-hover:scale-105"
+            />
+
+            <div className="font-black tracking-wide text-xl">
+              <span className="text-white">GAME OF </span>
+              <span className="text-amber-400">GAMBITS</span>
+            </div>
+          </Link>
+
+          <p className="text-zinc-500 text-xs tracking-[0.22em] uppercase mt-2">
+            Strategic Decision Simulation
+          </p>
         </div>
 
-        {/* Card */}
+        {/* Login Card */}
         <div className="bg-zinc-900/80 backdrop-blur border border-zinc-800 rounded-2xl p-8">
-          <h1 className="text-white text-xl font-semibold mb-1">Welcome back</h1>
-          <p className="text-zinc-500 text-sm mb-8">Sign in to your manager account</p>
+          <h1 className="text-white text-2xl font-bold mb-1">
+            Welcome back
+          </h1>
+
+          <p className="text-zinc-500 text-sm mb-8">
+            Sign in to your manager account
+          </p>
 
           <form onSubmit={handleLogin} className="space-y-5">
             <div>
               <label className="block text-zinc-400 text-xs uppercase tracking-wider mb-2">
                 Email
               </label>
+
               <input
                 type="email"
                 value={email}
@@ -88,6 +105,7 @@ export default function LoginPage() {
               <label className="block text-zinc-400 text-xs uppercase tracking-wider mb-2">
                 Password
               </label>
+
               <input
                 type="password"
                 value={password}
@@ -100,23 +118,43 @@ export default function LoginPage() {
 
             {error && (
               <div className="bg-red-500/10 border border-red-500/30 rounded-lg px-4 py-3">
-                <p className="text-red-400 text-sm">{error}</p>
+                <p className="text-red-400 text-sm">
+                  {error}
+                </p>
               </div>
             )}
 
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-amber-400 hover:bg-amber-300 disabled:bg-amber-400/50 text-black font-semibold rounded-lg py-3 text-sm tracking-wide transition-colors"
+              className="w-full bg-amber-400 hover:bg-amber-300 disabled:bg-amber-400/50 text-black font-bold rounded-lg py-3 text-sm tracking-wide transition-colors"
             >
               {loading ? 'Signing in...' : 'Sign In →'}
             </button>
           </form>
         </div>
 
+        {/* Back to homepage */}
+        <div className="text-center mt-6">
+          <Link
+            href="/"
+            className="text-amber-400 hover:text-amber-300 text-sm transition-colors"
+          >
+            ← Back to Game of Gambits
+          </Link>
+        </div>
+
         {/* Footer */}
-        <p className="text-center text-zinc-600 text-xs mt-6">
-          Game of Gambits · Developed by NB Blue Studios
+        <p className="text-center text-zinc-600 text-xs mt-4">
+          Game of Gambits · Developed by{' '}
+          <a
+            href="https://www.nbbluestudios.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-zinc-400 transition-colors"
+          >
+            NB Blue Studios
+          </a>
         </p>
       </div>
     </div>
