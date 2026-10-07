@@ -113,7 +113,7 @@ export default function LoginPage() {
 
         {/* Footer */}
         <p className="text-center text-zinc-600 text-xs mt-6">
-          NB Blue Studios · Game of Gambits Platform
+          Game of Gambits · Developed by NB Blue Studios
         </p>
       </div>
     </div>
