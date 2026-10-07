@@ -69,14 +69,13 @@ export default function HomePage() {
 
       {/* Nav */}
       <nav className="relative border-b border-zinc-800/50 bg-zinc-950/80 backdrop-blur px-6 py-4 flex items-center justify-between sticky top-0 z-50">
-        <div className="flex items-center">
-  <img
-    src="/game-of-gambits-logo.svg"
-    alt="Game of Gambits"
-    className="h-10 w-auto"
-  />
-</div> 
-        
+        <a href="#" className="flex items-center gap-2.5">
+          <img src="/game-of-gambits-icon.svg" alt="" className="h-8 w-8" />
+          <span className="font-black tracking-wide text-white text-base">
+            GAME OF <span className="text-amber-400">GAMBITS</span>
+          </span>
+        </a>
+
         <div className="flex items-center gap-4">
           <a href="#how-it-works" className="text-zinc-500 hover:text-white text-sm transition-colors hidden md:block">How it works</a>
           <a href="#faq" className="text-zinc-500 hover:text-white text-sm transition-colors hidden md:block">FAQ</a>
@@ -88,7 +87,12 @@ export default function HomePage() {
       </nav>
 
       {/* Hero */}
-      <section className="relative px-6 py-24 md:py-36 text-center max-w-5xl mx-auto">
+      <section className="relative px-6 py-16 md:py-24 text-center max-w-5xl mx-auto">
+      <img
+        src="/game-of-gambits-icon.svg"
+        alt="Game of Gambits"
+        className="mx-auto mb-6 h-20 w-20 md:h-24 md:w-24 drop-shadow-[0_0_40px_rgba(251,191,36,0.25)]"
+      />
       <div className="inline-flex items-center gap-2 bg-amber-400/10 border border-amber-400/20 rounded-full px-4 py-1.5 mb-8">
   <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse" />
   <span className="text-amber-400 text-xs font-medium tracking-wider uppercase">
@@ -305,13 +309,10 @@ export default function HomePage() {
       <footer className="relative border-t border-zinc-800 px-6 py-8">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <div className="flex items-center">
-  <img
-    src="/game-of-gambits-logo.svg"
-    alt="Game of Gambits"
-    className="h-8 w-auto"
-  />
-</div> 
+            <img src="/game-of-gambits-icon.svg" alt="" className="h-6 w-6" />
+            <span className="font-bold tracking-wide text-zinc-300 text-sm">
+              GAME OF <span className="text-amber-400">GAMBITS</span>
+            </span>
           </div>
           <p className="text-zinc-600 text-sm">
             Powered by{' '}
