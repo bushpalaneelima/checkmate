@@ -58,7 +58,7 @@ export default function LoginPage() {
             <div className="w-8 h-8 bg-amber-400 rotate-45 rounded-sm" />
             <span className="text-white font-bold text-2xl tracking-widest uppercase">Game of Gambits</span>
           </div>
-          <p className="text-zinc-500 text-sm tracking-wider uppercase">Fantasy Cricket Platform</p>
+          <p className="text-zinc-500 text-sm tracking-wider uppercase">Strategic Decision Simulation</p>
         </div>
 
         {/* Card */}
