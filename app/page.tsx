@@ -305,8 +305,13 @@ export default function HomePage() {
       <footer className="relative border-t border-zinc-800 px-6 py-8">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <div className="w-5 h-5 bg-amber-400 rotate-45 rounded-sm" />
-            <span className="font-bold tracking-widest uppercase text-sm">Game of Gambits</span>
+            <div className="flex items-center">
+  <img
+    src="/game-of-gambits-logo.svg"
+    alt="Game of Gambits"
+    className="h-8 w-auto"
+  />
+</div> 
           </div>
           <p className="text-zinc-600 text-sm">
             Powered by{' '}
