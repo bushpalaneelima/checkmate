@@ -174,7 +174,7 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
             <h2 className="text-3xl md:text-4xl font-black mb-3">Why Game of Gambits?</h2>
-            <p className="text-zinc-500">Built for serious fantasy cricket managers</p>
+            <p className="text-zinc-500">Built for strategy, competition and smarter decisions</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-4">
@@ -184,7 +184,7 @@ export default function HomePage() {
               { icon: '🎯', title: 'Power Players', desc: 'Nominate key players for 2x points multiplier. One smart Power Player pick can change your entire season.' },
               { icon: '📊', title: 'Live Leaderboard', desc: 'Track your ranking after every IPL match. Points update in real-time based on actual player performances.' },
               { icon: '🔄', title: 'Dynamic Rules', desc: 'Each auction group can customise rules — player classes, purse size, squad limits. Fully flexible for any group size.' },
-              { icon: '🏏', title: 'Full IPL Coverage', desc: 'All 249 IPL 2026 players across 10 teams. Platinum, Gold, Silver and Bronze tiers with different base prices.' },
+              { icon: '🏏', title: 'Structured Player Pool', desc: 'Players are organised across configurable tiers and base values, creating different strategic choices in every game.' },
             ].map((feature) => (
               <div key={feature.title} className="flex gap-4 bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-zinc-700 transition-colors">
                 <span className="text-2xl flex-shrink-0">{feature.icon}</span>
