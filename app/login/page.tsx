@@ -54,10 +54,13 @@ export default function LoginPage() {
       <div className="relative w-full max-w-md">
         {/* Logo */}
         <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 mb-4">
-            <div className="w-8 h-8 bg-amber-400 rotate-45 rounded-sm" />
-            <span className="text-white font-bold text-2xl tracking-widest uppercase">Game of Gambits</span>
-          </div>
+          <div className="inline-flex items-center justify-center mb-4">
+  <img
+    src="/game-of-gambits-logo.svg"
+    alt="Game of Gambits"
+    className="h-14 w-auto"
+  />
+</div>
           <p className="text-zinc-500 text-sm tracking-wider uppercase">Strategic Decision Simulation</p>
         </div>
 
