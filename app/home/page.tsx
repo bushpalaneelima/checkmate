@@ -84,19 +84,20 @@ export default function HomePage() {
       </nav>
 
       {/* Hero */}
+      <section className="relative px-6 py-24 md:py-36 text-center max-w-5xl mx-auto">
       <div className="inline-flex items-center gap-2 bg-amber-400/10 border border-amber-400/20 rounded-full px-4 py-1.5 mb-8">
   <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse" />
   <span className="text-amber-400 text-xs font-medium tracking-wider uppercase">
-    IPL 2026 Season Live
+    Strategic Decision Simulation
   </span>
 </div>
 
 <h1 className="text-5xl md:text-7xl font-black mb-6 leading-none tracking-tight">
-  The Ultimate
+  Think.
   <br />
   <span className="text-amber-400">Fantasy Cricket</span>
   <br />
-  Auction
+   Compete.
 </h1>
 
 <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
