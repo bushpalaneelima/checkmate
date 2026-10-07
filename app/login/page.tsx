@@ -56,7 +56,7 @@ export default function LoginPage() {
         <div className="text-center mb-10">
           <div className="inline-flex items-center gap-2 mb-4">
             <div className="w-8 h-8 bg-amber-400 rotate-45 rounded-sm" />
-            <span className="text-white font-bold text-2xl tracking-widest uppercase">Checkmate</span>
+            <span className="text-white font-bold text-2xl tracking-widest uppercase">Game of Gambits</span>
           </div>
           <p className="text-zinc-500 text-sm tracking-wider uppercase">Fantasy Cricket Platform</p>
         </div>
@@ -113,7 +113,7 @@ export default function LoginPage() {
 
         {/* Footer */}
         <p className="text-center text-zinc-600 text-xs mt-6">
-          NB Blue Studios · Checkmate Platform
+          NB Blue Studios · Game of Gambits Platform
         </p>
       </div>
     </div>
