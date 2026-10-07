@@ -87,20 +87,20 @@ export default function HomePage() {
       </nav>
 
       {/* Hero */}
-      <section className="relative px-6 py-16 md:py-24 text-center max-w-5xl mx-auto">
+      <section className="relative px-6 pt-8 pb-16 md:pt-12 md:pb-24 text-center max-w-5xl mx-auto">
       <img
         src="/game-of-gambits-icon.svg"
         alt="Game of Gambits"
-        className="mx-auto mb-6 h-20 w-20 md:h-24 md:w-24 drop-shadow-[0_0_40px_rgba(251,191,36,0.25)]"
+        className="mx-auto mb-4 h-14 w-14 md:h-16 md:w-16 drop-shadow-[0_0_40px_rgba(251,191,36,0.25)]"
       />
-      <div className="inline-flex items-center gap-2 bg-amber-400/10 border border-amber-400/20 rounded-full px-4 py-1.5 mb-8">
+      <div className="inline-flex items-center gap-2 bg-amber-400/10 border border-amber-400/20 rounded-full px-4 py-1.5 mb-6">
   <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse" />
   <span className="text-amber-400 text-xs font-medium tracking-wider uppercase">
     Strategic Decision Simulation
   </span>
 </div>
 
-<h1 className="text-5xl md:text-7xl font-black mb-6 leading-none tracking-tight">
+<h1 className="text-5xl md:text-7xl font-black mb-5 leading-none tracking-tight">
   Think.
   <br />
   <span className="text-amber-400">Decide.</span>
@@ -108,7 +108,7 @@ export default function HomePage() {
    Compete.
 </h1>
 
-<p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+<p className="text-zinc-400 text-lg md:text-xl max-w-3xl mx-auto mb-8 leading-relaxed">
   Manage limited resources, make strategic choices and build your winning squad.
   Game of Gambits turns cricket into a live decision-making experience.
 </p>
