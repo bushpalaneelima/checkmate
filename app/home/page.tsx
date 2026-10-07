@@ -117,9 +117,9 @@ export default function HomePage() {
         {/* Stats */}
         <div className="grid grid-cols-3 gap-6 mt-20 max-w-2xl mx-auto">
           {[
-            { value: '249', label: 'IPL Players' },
+            { value: 'LIVE', label: 'Competitive Bidding' },
             { value: '1000', label: 'Points Purse' },
-            { value: '30s', label: 'Bid Timer' },
+            { value: '30s', label: 'Decision Timer' },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <p className="text-4xl font-black text-amber-400 mb-1">{stat.value}</p>
@@ -133,7 +133,7 @@ export default function HomePage() {
       <section id="how-it-works" className="relative px-6 py-20 max-w-5xl mx-auto">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-black mb-3">How It Works</h2>
-          <p className="text-zinc-500">Three steps to fantasy cricket glory</p>
+          <p className="text-zinc-500">Three steps from strategy to victory</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
