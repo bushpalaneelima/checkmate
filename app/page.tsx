@@ -69,10 +69,14 @@ export default function HomePage() {
 
       {/* Nav */}
       <nav className="relative border-b border-zinc-800/50 bg-zinc-950/80 backdrop-blur px-6 py-4 flex items-center justify-between sticky top-0 z-50">
-        <div className="flex items-center gap-2">
-          <div className="w-6 h-6 bg-amber-400 rotate-45 rounded-sm" />
-          <span className="font-bold tracking-widest uppercase text-sm">Game of Gambits</span>
-        </div>
+        <div className="flex items-center">
+  <img
+    src="/game-of-gambits-logo.svg"
+    alt="Game of Gambits"
+    className="h-10 w-auto"
+  />
+</div> 
+        
         <div className="flex items-center gap-4">
           <a href="#how-it-works" className="text-zinc-500 hover:text-white text-sm transition-colors hidden md:block">How it works</a>
           <a href="#faq" className="text-zinc-500 hover:text-white text-sm transition-colors hidden md:block">FAQ</a>
