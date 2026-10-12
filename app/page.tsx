@@ -4,6 +4,12 @@ import { useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import Link from 'next/link'
 
+const BOOKING_WHATSAPP = `https://wa.me/919848034889?text=${encodeURIComponent(
+  "Hi Neelima, I'd like to run a Game of Gambits session for our institution / team. Can we discuss?"
+)}`
+const BOOKING_EMAIL =
+  'mailto:hello@nbbluestudios.com?subject=Game%20of%20Gambits%20session%20enquiry'
+
 export default function HomePage() {
   const [form, setForm] = useState({ name: '', email: '', phone: '' })
   const [loading, setLoading] = useState(false)
@@ -56,6 +62,14 @@ export default function HomePage() {
       a: 'Each manager can nominate Power Players who earn 2x points multiplier for the season. Choose wisely — your Power Player picks can make or break your season.'
     },
     {
+      q: 'Is any real money involved?',
+      a: 'No. Game of Gambits is an educational decision simulation played with virtual points only. There is no real money, betting or wagering of any kind.'
+    },
+    {
+      q: 'Can we run it for our class, institution or company?',
+      a: 'Yes. We run facilitated sessions for MBA and management programs, student clubs and corporate teams, with rules configured for your group and a debrief on the decisions made. Use the booking options on this page to get in touch.'
+    },
+    {
       q: 'How do I join?',
       a: 'Register your interest below. Our team will reach out with auction details, login credentials and the rules document before the auction date.'
     },
@@ -78,6 +92,7 @@ export default function HomePage() {
 
         <div className="flex items-center gap-4">
           <a href="#how-it-works" className="text-zinc-500 hover:text-white text-sm transition-colors hidden md:block">How it works</a>
+          <a href="#institutions" className="text-zinc-500 hover:text-white text-sm transition-colors hidden md:block">For Institutions</a>
           <a href="#faq" className="text-zinc-500 hover:text-white text-sm transition-colors hidden md:block">FAQ</a>
           <a href="#register" className="text-zinc-500 hover:text-white text-sm transition-colors hidden md:block">Register Interest</a>
           <Link href="/login" className="bg-amber-400 hover:bg-amber-300 text-black font-semibold px-4 py-2 rounded-lg text-sm transition-colors">
@@ -117,11 +132,15 @@ export default function HomePage() {
             className="bg-amber-400 hover:bg-amber-300 text-black font-bold px-8 py-4 rounded-xl text-lg transition-colors">
             Register Your Interest →
           </a>
-          <a href="#how-it-works"
+          <a href="#institutions"
             className="bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-semibold px-8 py-4 rounded-xl text-lg transition-colors">
-            How It Works
+            For Institutions & Teams
           </a>
         </div>
+
+        <p className="text-zinc-500 text-sm mt-6">
+          An educational decision simulation played with virtual points. No real money or betting involved.
+        </p>
 
         {/* Stats */}
         <div className="grid grid-cols-3 gap-6 mt-20 max-w-2xl mx-auto">
@@ -203,6 +222,112 @@ export default function HomePage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* For Institutions & Corporates */}
+      <section id="institutions" className="relative px-6 py-20 max-w-5xl mx-auto">
+        <div className="text-center mb-14">
+          <div className="inline-flex items-center gap-2 bg-amber-400/10 border border-amber-400/20 rounded-full px-4 py-1.5 mb-5">
+            <span className="text-amber-400 text-xs font-medium tracking-wider uppercase">
+              For Institutions &amp; Corporates
+            </span>
+          </div>
+          <h2 className="text-3xl md:text-4xl font-black mb-3">Decision training that people remember</h2>
+          <p className="text-zinc-500 max-w-2xl mx-auto">
+            A facilitated simulation for classrooms and teams. Participants make real trade-offs under
+            pressure, then review what their decisions actually achieved.
+          </p>
+        </div>
+
+        {/* Live session video */}
+        <div className="grid md:grid-cols-[minmax(0,320px)_1fr] gap-8 md:gap-12 items-center mb-14">
+          <div className="mx-auto w-full max-w-[320px] rounded-2xl overflow-hidden border border-zinc-800 bg-black shadow-[0_0_60px_rgba(251,191,36,0.08)]">
+            <video
+              className="w-full h-auto block"
+              controls
+              playsInline
+              preload="none"
+              poster="/videos/game-of-gambits-poster.jpg"
+            >
+              <source src="/videos/game-of-gambits-session.mp4" type="video/mp4" />
+              Your browser does not support video playback.
+            </video>
+          </div>
+          <div className="text-center md:text-left">
+            <p className="text-amber-400 text-xs font-medium tracking-wider uppercase mb-3">From a live session</p>
+            <h3 className="text-2xl md:text-3xl font-black mb-4">See it in the room</h3>
+            <p className="text-zinc-400 leading-relaxed mb-4">
+              Participants bid live against each other on their laptops, with every decision tested
+              against a limited purse and a 30-second clock. The energy in the room comes from the
+              strategy, not luck.
+            </p>
+            <p className="text-zinc-500 text-sm leading-relaxed">
+              Each session ends with a debrief: what did teams prioritise, where did they overspend,
+              and what would they do differently?
+            </p>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6 mb-10">
+          {[
+            {
+              title: 'What participants learn',
+              items: [
+                'Resource allocation under constraints',
+                'Bidding strategy and competitive reasoning',
+                'Risk, value and portfolio thinking',
+                'Decisions under time pressure',
+                'Reviewing outcomes with data',
+              ],
+            },
+            {
+              title: 'Session formats',
+              items: [
+                'Classroom session: live auction with a facilitated debrief',
+                'League format: track squad performance across a tournament',
+                'Corporate workshop: team-based strategy and decision training',
+              ],
+            },
+            {
+              title: 'Built for',
+              items: [
+                'MBA and management programs',
+                'Corporate L&D and leadership teams',
+                'Student clubs, fests and competitions',
+                'Rules configured to your group size',
+              ],
+            },
+          ].map((col) => (
+            <div key={col.title} className="bg-zinc-900 border border-zinc-800 rounded-2xl p-7">
+              <h3 className="text-amber-400 font-bold text-sm uppercase tracking-wider mb-4">{col.title}</h3>
+              <ul className="space-y-3">
+                {col.items.map((item) => (
+                  <li key={item} className="flex gap-3 text-zinc-300 text-sm leading-relaxed">
+                    <span className="text-amber-400 flex-shrink-0">▸</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        <div className="bg-gradient-to-r from-amber-400/10 to-transparent border border-amber-400/20 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <p className="text-white font-bold text-xl mb-1">Run Game of Gambits for your class or team</p>
+            <p className="text-zinc-400 text-sm">Tell us your group size and dates, and we'll suggest a format.</p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
+            <a href={BOOKING_WHATSAPP} target="_blank" rel="noreferrer"
+              className="bg-amber-400 hover:bg-amber-300 text-black font-bold px-6 py-3 rounded-xl text-sm transition-colors text-center">
+              Book via WhatsApp →
+            </a>
+            <a href={BOOKING_EMAIL}
+              className="bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-semibold px-6 py-3 rounded-xl text-sm transition-colors text-center">
+              Email us
+            </a>
           </div>
         </div>
       </section>
@@ -314,9 +439,9 @@ export default function HomePage() {
               GAME OF <span className="text-amber-400">GAMBITS</span>
             </span>
           </div>
-          <p className="text-zinc-600 text-sm">
-            Powered by{' '}
-            <a href="https://nbbluestudios.com" target="_blank" className="hover:text-zinc-400 transition-colors">
+          <p className="text-zinc-600 text-sm text-center">
+            An NB Simulation product · Powered by{' '}
+            <a href="https://www.nbbluestudios.com/#platforms" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white transition-colors">
               NB Blue Studios
             </a>
           </p>
