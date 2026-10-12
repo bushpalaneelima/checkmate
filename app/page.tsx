@@ -249,9 +249,9 @@ export default function HomePage() {
               controls
               playsInline
               preload="none"
-              poster="/videos/game-of-gambits-poster.jpg"
+              poster="/game-of-gambits-poster.jpg"
             >
-              <source src="/videos/game-of-gambits-session.mp4" type="video/mp4" />
+              <source src="/game-of-gambits-session.mp4" type="video/mp4" />
               Your browser does not support video playback.
             </video>
           </div>
